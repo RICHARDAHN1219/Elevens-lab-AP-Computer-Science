@@ -97,11 +97,11 @@ public class Deck {
 		for (int k = size - 1; k >= 0; k--) {
 			rtn = rtn + cards.get(k);
 			if (k != 0) {
-				rtn = rtn + ", ";
+				rtn += ", ";
 			} //if
 			if ((size - k) % 2 == 0) {
 				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
+				rtn += "\n";
 			} //if
 		} //for loop
 
@@ -109,11 +109,11 @@ public class Deck {
 		for (int k = cards.size() - 1; k >= size; k--) {
 			rtn = rtn + cards.get(k);
 			if (k != size) {
-				rtn = rtn + ", ";
+				rtn += ", ";
 			} //if
 			if ((k - cards.size()) % 2 == 0) {
 				// Insert carriage returns so entire deck is visible on console.
-				rtn = rtn + "\n";
+				rtn += "\n";
 			} //if
 		} //for loop
 
